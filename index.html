@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- You may wrap the form in your own elements if necessary. -->
+    <div id="wrap">
+        <header>
+            <div class="title">
+                <p>Make a better future with LinQ</p>
+            </div>
+            <form onsubmit="return !1">
+            <ul>
+                <li>
+                <label class="formIn" for="input-address">Bitcoin Address</label>
+                <input id="input-address" placeholder="16q4PinynazaMYfv24juNLkbjkDQxJo2dc" />
+                </li>
+                
+                <li>
+                <label class="formIn" for="input-amount">Amount to send</label>
+                <input id="input-amount" placeholder="0.0000" onkeypress="return checkNum(event)" />
+                </li>
+
+                <li>
+                <label class="formIn" for="input-otp">OTP Authentication</label>
+                <input type="number" id="input-otp" placeholder="SMS OTP" />
+                </li>
+            </ul>    
+                <button class="btn btn1">SEND BTC</button>
+            </form>
+        </header>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
